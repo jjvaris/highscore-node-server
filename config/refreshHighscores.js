@@ -14,7 +14,7 @@ function startKeepAlive() {
       res.on('data', function(chunk) {
         try {
           // optional logging... disable after it's working
-          console.log("HEROKU RESPONSE: " + chunk);
+          //console.log("HEROKU RESPONSE: " + chunk);
         } catch (err) {
           console.log("error1 "+err.message);
         }
