@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="113" selection-start="398" selection-end="398" vertical-scroll-proportion="0.28822497" vertical-offset="16" max-vertical-offset="675">
+            <state line="39" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -53,16 +53,16 @@
       <file leaf-file-name="highscores.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/highscores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="79" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="341" max-vertical-offset="1590">
+            <state line="46" column="22" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1590">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refreshHighscores.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="refreshHighscores.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="10" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+            <state line="25" column="2" selection-start="619" selection-end="619" vertical-scroll-proportion="0.6443299" vertical-offset="0" max-vertical-offset="582">
               <folding />
             </state>
           </provider>
@@ -131,11 +131,12 @@
         <option value="$PROJECT_DIR$/public/highscores.json.js" />
         <option value="$PROJECT_DIR$/public/highscores.json" />
         <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/app/controllers/highscores.js" />
         <option value="$PROJECT_DIR$/config/keepAlive.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/app/controllers/highscores.js" />
+        <option value="$PROJECT_DIR$/config/refreshHighscores.js" />
       </list>
     </option>
   </component>
@@ -201,6 +202,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -459,30 +492,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="2" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/highscores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="79" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="341" max-vertical-offset="1590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
@@ -494,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="35" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="25" selection-start="1348" selection-end="1349" vertical-scroll-proportion="0.61254615" vertical-offset="433" max-vertical-offset="975">
@@ -508,9 +513,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="35" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="113" selection-start="398" selection-end="398" vertical-scroll-proportion="0.28822497" vertical-offset="16" max-vertical-offset="675">
+        <state line="39" column="0" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/highscores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="22" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="2" selection-start="619" selection-end="619" vertical-scroll-proportion="0.6443299" vertical-offset="0" max-vertical-offset="582">
           <folding />
         </state>
       </provider>
