@@ -35,16 +35,7 @@
       <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="33" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="2" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="5" column="44" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -62,7 +53,16 @@
       <file leaf-file-name="refreshHighscores.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="17" selection-start="704" selection-end="704" vertical-scroll-proportion="0.6964286" vertical-offset="0" max-vertical-offset="560">
+            <state line="7" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.18041237" vertical-offset="0" max-vertical-offset="582">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="highscores.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/highscores.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="2033" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="0" column="1884" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
             </state>
           </provider>
@@ -135,8 +135,9 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/app/controllers/highscores.js" />
-        <option value="$PROJECT_DIR$/config/refreshHighscores.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/refreshHighscores.js" />
       </list>
     </option>
   </component>
@@ -188,6 +189,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clicks-node-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,7 +485,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/highscores.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2033" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+        <state line="0" column="1884" selection-start="1884" selection-end="1884" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
           <folding />
         </state>
       </provider>
@@ -538,16 +553,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="33" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
+        <state line="5" column="44" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="17" selection-start="704" selection-end="704" vertical-scroll-proportion="0.6964286" vertical-offset="0" max-vertical-offset="560">
+        <state line="7" column="24" selection-start="218" selection-end="218" vertical-scroll-proportion="0.18041237" vertical-offset="0" max-vertical-offset="582">
           <folding />
         </state>
       </provider>

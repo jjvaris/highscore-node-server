@@ -2,10 +2,11 @@ var http = require('http'); //importing http
 var config = require ('./config');
 
 function startKeepAlive() {
-
+  console.log('PORTTI '+config.port);
   setInterval(function() {
     var options = {
-      host: 'whispering-waters-6898.herokuapp.com',
+      host: 'localhost',
+      //host: 'localhost',
       port: config.port,
       path: '/api/highscorelists'
     };
@@ -15,7 +16,7 @@ function startKeepAlive() {
           // optional logging... disable after it's working
           console.log("HEROKU RESPONSE: " + chunk);
         } catch (err) {
-          console.log(err.message);
+          console.log("error1 "+err.message);
         }
       });
     }).on('error', function(err) {
