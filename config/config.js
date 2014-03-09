@@ -10,7 +10,8 @@ var config = {
       name: 'clicks-node-server'
     },
     port: 3000,
-    db: 'mongodb://localhost/clicks-node-server-development',
+    db: 'mongodb://heroku_app22886915:mgn91iolj61pgr06or56lcafsc@ds033069.mongolab.com:33069/heroku_app22886915',
+    //db: 'mongodb://localhost/clicks-node-server-development',
     secretKey: security.secretKey
   },
 
@@ -30,7 +31,7 @@ var config = {
       name: 'clicks-node-server'
     },
     port: 3000,
-    db: 'mongodb://localhost/clicks-node-server-production',
+    db: 'mongodb://heroku_app22886915:mgn91iolj61pgr06or56lcafsc@ds033069.mongolab.com:33069/heroku_app22886915',
     secretKey: security.secretKey
   }
 };
