@@ -1,11 +1,12 @@
 var http = require('http'); //importing http
+var config = require ('./config');
 
 function startKeepAlive() {
 
   setInterval(function() {
     var options = {
-      host: 'localhost',
-      port: 3000,
+      host: 'whispering-waters-6898.herokuapp.com',
+      port: config.port,
       path: '/api/highscorelists'
     };
     http.get(options, function(res) {
@@ -20,7 +21,7 @@ function startKeepAlive() {
     }).on('error', function(err) {
       console.log("Error: " + err.message);
     });
-  }, 30 * 1000); // load every minute
+  }, 30 * 1000); // load every 30 secs
 }
 
-//startKeepAlive();
+startKeepAlive();

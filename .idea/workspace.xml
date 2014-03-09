@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/config.js">
+      <file leaf-file-name="express.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/express.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="14" selection-start="842" selection-end="842" vertical-scroll-proportion="0.8963093" vertical-offset="0" max-vertical-offset="705">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="highscore.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/highscore.js">
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="27" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="1155">
+            <state line="19" column="33" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refreshHighscores.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="refreshHighscores.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="2" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+            <state line="26" column="17" selection-start="704" selection-end="704" vertical-scroll-proportion="0.6964286" vertical-offset="0" max-vertical-offset="560">
               <folding />
             </state>
           </provider>
@@ -404,7 +404,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
@@ -459,18 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/security.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/highscore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="27" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="1155">
@@ -506,27 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/highscores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="22" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="2" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="5" selection-start="190" selection-end="190" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="435">
@@ -541,9 +510,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/security.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="67" selection-end="67" vertical-scroll-proportion="0.077319585" vertical-offset="0" max-vertical-offset="582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/highscores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="22" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0" vertical-offset="326" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="842" selection-end="842" vertical-scroll-proportion="0.8963093" vertical-offset="0" max-vertical-offset="705">
+        <state line="19" column="33" selection-start="628" selection-end="628" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="17" selection-start="704" selection-end="704" vertical-scroll-proportion="0.6964286" vertical-offset="0" max-vertical-offset="560">
           <folding />
         </state>
       </provider>
