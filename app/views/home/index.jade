@@ -1,20 +1,63 @@
 extends ../layout
 
 block content
-  h1 I'm using generator-express MVC!
-    h1 Articles
+    div(class='container-fluid', id='content')
+        div(class='row')
+            div(class='col-lg-1')
+                h1 Clicks
+                h2 Highscores
 
-    #results
-        table
-            thead
-                if articles
-                    tr
-                        th name
-            tbody
-                if articles
-                    - each a in articles
+        div(class='row')
+            #results
+            div(class='col-md-4')
+                h3 Today
+                table(class='table table-striped')
+                    thead
                         tr
-                            td
-                                p= a.title
-    br
-    //a(href="/users/new") New User
+                            th #
+                            th Name
+                            th Score
+                    tbody
+                        if highscores.today
+                            - n = 1
+                            - each h in highscores.today
+                                tr
+                                    td= n
+                                    td= h.name
+                                    td= h.score
+                                - n = n + 1
+
+            div(class='col-md-4')
+                h3 This week
+                table(class='table table-striped')
+                    thead
+                        tr
+                            th #
+                            th Name
+                            th Score
+                    tbody
+                        if highscores.today
+                            - n = 1
+                            - each h in highscores.this_week
+                                tr
+                                    td= n
+                                    td= h.name
+                                    td= h.score
+                                - n = n + 1
+            div(class='col-md-4')
+                h3 All time
+                table(class='table table-striped')
+                    thead
+                        tr
+                            th #
+                            th Name
+                            th Score
+                    tbody
+                        if highscores.today
+                            - n = 1
+                            - each h in highscores.all_time
+                                tr
+                                    td= n
+                                    td= h.name
+                                    td= h.score
+                                - n = n + 1

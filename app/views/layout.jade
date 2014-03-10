@@ -2,11 +2,13 @@ doctype 5
 html(lang='en')
   head
     meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width')
-    title= title
+    meta(name='viewport', content='width=device-width', initial-scale=1)
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    //title= Clicks highscores
     block css
-      link(rel='stylesheet', href='/css/style.css')
+      link(rel='stylesheet', href='css/bootstrap.css')
     block js
-      script(src='http://localhost:35729/livereload.js')
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+      script(src='js/bootstrap.js')
   body
     block content

@@ -70,7 +70,7 @@ exports.getDayilyWeeklyAlltime = function(req, res){
  */
 
 
-/*exports.addHighscore = function (req, res) {
+exports.addHighscore = function (req, res) {
   var newHighscore = new Highscore(req.body);
   var stringToBeHashed = newHighscore.score + "+" + newHighscore.name + "-" + config.secretKey;
   var generatedHash = newHighscore.generateHash(stringToBeHashed);
@@ -84,9 +84,9 @@ exports.getDayilyWeeklyAlltime = function(req, res){
   } else {
       return res.send(400);
   }
-};*/
+};
 
-exports.addHighscore = function (req, res) {
+exports.addHighscoreEasy = function (req, res) {
   var newHighscore = new Highscore(req.body);
 
 
