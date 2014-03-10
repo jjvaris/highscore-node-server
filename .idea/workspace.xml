@@ -92,7 +92,7 @@
       <file leaf-file-name="routes.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="0.3482143" vertical-offset="0" max-vertical-offset="560">
+            <state line="15" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.4017857" vertical-offset="0" max-vertical-offset="560">
               <folding />
             </state>
           </provider>
@@ -666,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="35" selection-start="283" selection-end="283" vertical-scroll-proportion="0.1846435" vertical-offset="4" max-vertical-offset="750">
@@ -694,9 +687,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/refreshHighscores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="17" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="480" selection-end="480" vertical-scroll-proportion="0.3482143" vertical-offset="0" max-vertical-offset="560">
+        <state line="15" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.4017857" vertical-offset="0" max-vertical-offset="560">
           <folding />
         </state>
       </provider>

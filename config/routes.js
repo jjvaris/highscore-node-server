@@ -8,7 +8,7 @@ module.exports = function(app){
 
   //app.get('/api/highscores', highscores.get);
   app.post('/api/highscores', highscores.addHighscore);
-  app.post('/api/highscores', highscores.addHighscoreEasy);
+  app.post('/api/highscoresTest', highscores.addHighscoreEasy);
   app.get('/api/highscorelists', highscores.getDayilyWeeklyAlltime);
   app.get('/api/highscorefile', highscores.getHighscoreFile);
 
