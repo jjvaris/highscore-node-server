@@ -22,7 +22,7 @@ function startKeepAlive() {
     }).on('error', function(err) {
       console.log("Error: " + err.message);
     });
-  }, 10 * 1000); // load every 30 secs
+  }, 5 * 1000); // load every 30 secs
 }
 
 startKeepAlive();
