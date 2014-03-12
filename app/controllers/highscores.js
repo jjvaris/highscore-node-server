@@ -44,21 +44,22 @@ exports.getDayilyWeeklyAlltime = function(req, res){
               if(err) return res.send(err);
               if(allTimeHighscores.length !== 0)
                 allHighscores.all_time = allTimeHighscores;
-              //remove
-              if(todayHighscores.length !== 0)
-                Highscore.remove({date: { $gte: yesterday},
-                  score: {$lt: allHighscores.today[allHighscores.today.length-1].score}},
-                  function() {
-                    fs.writeFile('public/highscoresfile.json', JSON.stringify(allHighscores), function(err) {
-                      if(err) console.log(err);
-                      else console.log("highscores saved");
-                      return res.json(allHighscores);
-                    })
+
+              if(allHighscores.length !== 0)
+                fs.writeFile('public/highscoresfile.json', JSON.stringify(allHighscores), function(err) {
+                  if(err) console.log(err);
+                  else console.log("highscores saved");
+                  if(todayHighscores.length !== 0)
+                    Highscore.remove({date: { $gte: yesterday},
+                        score: {$lt: allHighscores.today[allHighscores.today.length-1].score}},
+                      function() {
+                        return res.json(allHighscores);
+                      }
+                    )
                 })
-          })
+            })
       })
   });
-  //alltime
 };
 
 exports.addHighscore = function (req, res) {
