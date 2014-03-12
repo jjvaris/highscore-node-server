@@ -12,7 +12,7 @@ exports.get = function(req, res){
 };
 
 exports.getHighscoreFile = function(req, res) {
-  fs.readFile('public/highscoresfile.json', 'utf8',function(err, file) {
+  fs.readFile('public/highscoresfile2.json', 'utf8',function(err, file) {
     if(err) return res.send(err);
     return res.end(file);
   })
@@ -46,7 +46,7 @@ exports.getDayilyWeeklyAlltime = function(req, res){
                 allHighscores.all_time = allTimeHighscores;
 
               if(allHighscores.length !== 0)
-                fs.writeFile('public/highscoresfile.json', JSON.stringify(allHighscores), function(err) {
+                fs.writeFile('public/highscoresfile2.json', JSON.stringify(allHighscores), function(err) {
                   if(err) console.log(err);
                   else console.log("highscores saved");
                   if(todayHighscores.length !== 0)
