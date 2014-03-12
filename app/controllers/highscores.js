@@ -18,7 +18,7 @@ exports.getHighscoreFile = function(req, res) {
   })
 };
 
-exports.getDayilyWeeklyAlltime = function(req, res){
+exports.getDayilyWeeklyAlltime = function(){
   var allHighscores = {today: {}, this_week: {}, all_time: {}};
   var dateOffsetOneDay = (24*60*60*1000) * 1; //1 days
   var dateOffsetWeek = (24*60*60*1000) * 7; //7 days
@@ -30,35 +30,31 @@ exports.getDayilyWeeklyAlltime = function(req, res){
   //daily
   Highscore.find({date: { $gte: yesterday }}, {_id: 0}).select('name score date').limit(10).sort({score: 'desc'}).execFind(
     function(err, todayHighscores){
-      if(err) return res.send(err);
+      if(err) return console.log(err);
       if(todayHighscores.length !== 0)
         allHighscores.today = todayHighscores;
       //weekly
       Highscore.find({date: { $gte: weekAgo}}, {_id: 0}).select('name score date').limit(10)
         .sort({score: 'desc'}).execFind(function(err, weekAgoHighscores){
-          if(err) return res.send(err);
+          if(err) return console.log(err);
           if(weekAgoHighscores.length !== 0)
             allHighscores.this_week = weekAgoHighscores;
           Highscore.find({},{_id: 0}).select('name score date').limit(10).sort({score: 'desc'}).execFind(
             function(err, allTimeHighscores) {
-              if(err) return res.send(err);
+              if(err) return console.log(err);
               if(allTimeHighscores.length !== 0)
                 allHighscores.all_time = allTimeHighscores;
-
               if(allHighscores.length !== 0)
                 fs.writeFile('public/highscoresfile2.json', JSON.stringify(allHighscores), function(err) {
                   if(err) console.log(err);
-                  else console.log("highscores saved");
                   if(todayHighscores.length !== 0)
                     Highscore.remove({date: { $gte: yesterday},
-                        score: {$lt: allHighscores.today[allHighscores.today.length-1].score}},
-                      function() {
-                        return res.json(allHighscores);
-                      }
-                    )
-                })
-            })
-      })
+                        score: {$lt: allHighscores.today[allHighscores.today.length-1].score}}, function(err) {
+                      if(err) return console.log(err);
+                    });
+                });
+          });
+      });
   });
 };
 

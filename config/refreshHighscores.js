@@ -1,7 +1,8 @@
-var http = require('http'); //importing http
-var config = require ('./config');
+//var http = require('http'); //importing http
+//var config = require ('./config');
+var highscores = require('../app/controllers/highscores');
 
-function startKeepAlive() {
+/*function startKeepAlive() {
   console.log('PORTTI '+config.port);
   setInterval(function() {
     var options = {
@@ -22,6 +23,12 @@ function startKeepAlive() {
     }).on('error', function(err) {
       console.log("Error: " + err.message);
     });
+  }, 5 * 1000); // load every 30 secs
+}*/
+
+function startKeepAlive() {
+  setInterval(function() {
+    highscores.getDayilyWeeklyAlltime();
   }, 5 * 1000); // load every 30 secs
 }
 

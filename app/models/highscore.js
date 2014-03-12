@@ -15,7 +15,7 @@ var HighscoreSchema = new Schema({
   score: Number,
   player_id: String,
   hash: String,
-  date: { type: Date, default: new Date() }
+  date: { type: Date, default: Date.now }
 });
 
 /*HighscoreSchema.virtual('date')
