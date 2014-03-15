@@ -13,7 +13,7 @@ exports.incrementPlayCount = function(req, res) {
     } else {
         Logger.update({gameId: 1}, { $inc: { gamesStarted: 1 } }, function(err, doc) {
           if(err) return console.log(err);
-          return res.send(2);
+          return res.send(200);
         })
     }
   });
