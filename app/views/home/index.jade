@@ -1,12 +1,16 @@
 extends ../layout
 
 block content
+  if playCount
+    h1= playCount.gamesStarted
   div(class='jumbotron')
     div(class='container-fluid', id='content')
       div(class='row')
         div(class='col-md-2')
           h1 Clicks
           h2 Highscores
+          if playCount
+            h1= jari
   div(class='scores')
     div(class='row')
       #results
