@@ -12,6 +12,7 @@ module.exports = function(app){
 //  app.get('/api/highscorelists', highscores.getDayilyWeeklyAlltime);
   app.get('/api/highscorefile', highscores.getHighscoreFile);
 
+  app.get('/api/test', highscores.removeOldHighscores);
   app.get('/api/increasePlayCount', logger.incrementPlayCount);
   app.get('/api/getPlayCount', logger.getPlayCount);
 
