@@ -28,18 +28,18 @@ exports.getDayilyWeeklyAlltime = function(){
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
 
   //daily
-  Highscore.find({date: { $gte: yesterday }}).select('name score date').limit(10).sort({score: 'desc'}).execFind(
+  Highscore.find({date: { $gte: yesterday }}).select('name score date uid').limit(10).sort({score: 'desc'}).execFind(
     function(err, todayHighscores){
       if(err) return console.log(err);
       if(todayHighscores.length !== 0)
         allHighscores.today = todayHighscores;
       //weekly
-      Highscore.find({date: { $gte: weekAgo}}).select('name score date').limit(10)
+      Highscore.find({date: { $gte: weekAgo}}).select('name score date uid').limit(10)
         .sort({score: 'desc'}).execFind(function(err, weekAgoHighscores){
           if(err) return console.log(err);
           if(weekAgoHighscores.length !== 0)
             allHighscores.this_week = weekAgoHighscores;
-          Highscore.find().select('name score date').limit(10).sort({score: 'desc'}).execFind(
+          Highscore.find().select('name score date uid').limit(10).sort({score: 'desc'}).execFind(
             function(err, allTimeHighscores) {
               if(err) return console.log(err);
               if(allTimeHighscores.length !== 0)
@@ -65,11 +65,11 @@ exports.addHighscore = function (req, res) {
 
   if(newHighscore.hash === generatedHash) {
     newHighscore.save(function(err) {
-      if (err) return res.json(400, err);
-      console.log("hashes matched");
+      if (err) return console.log(err);
       return res.json(newHighscore);
     });
   } else {
+      console.log("ATTACK: hashes didnt match");
       return res.send(400);
   }
 };
@@ -86,12 +86,12 @@ exports.removeOldHighscores = function (req, res) {
   var dateOffsetWeek = (24*60*60*1000) * 7; //7 days
   var weekAgo = new Date();
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
-  Highscore.find().select('name score date').limit(10)
+  Highscore.find().limit(10)
     .sort({score: 'desc'}).execFind(function(err, tenBestHighscores){
-
-    Highscore.remove({date: { $lt: weekAgo},
-      score: {$lt: tenBestHighscores[tenBestHighscores.length-1].score}}, function(err) {
-      if(err) return console.log(err);
-    });
+    if(tenBestHighscores.length != 0 )
+      Highscore.remove({date: { $lt: weekAgo},
+        score: {$lt: tenBestHighscores[tenBestHighscores.length-1].score}}, function(err) {
+        if(err) return console.log(err);
+      });
   });
 }
