@@ -60,7 +60,7 @@ exports.getDayilyWeeklyAlltime = function(){
 
 exports.addHighscore = function (req, res) {
   var newHighscore = new Highscore(req.body);
-  var stringToBeHashed = newHighscore.score + "+" + newHighscore.name + "-" + config.secretKey;
+  var stringToBeHashed = newHighscore.name + "-" + newHighscore.score + "+" + config.secretKey;
   var generatedHash = newHighscore.generateHash(stringToBeHashed);
 
   if(newHighscore.hash === generatedHash) {

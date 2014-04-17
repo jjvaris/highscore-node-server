@@ -13,7 +13,7 @@ var config = require('../../config/config');
 var HighscoreSchema = new Schema({
   name: String,
   score: Number,
-  player_id: String,
+  uid: String,
   hash: String,
   date: { type: Date, default: Date.now }
 });
