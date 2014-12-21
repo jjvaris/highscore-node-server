@@ -1,0 +1,5 @@
+.idea/
+public/highscorefile.json
+node_modules/
+config/security.js
+.DS_Store
