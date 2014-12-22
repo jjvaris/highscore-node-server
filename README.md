@@ -1,0 +1,19 @@
+highscore-node-server
+=====================
+
+Node.js + MongoDB backend highscore server for your game. Stores top 10 daily, weekly and all time highscores.
+
+#API
+* post highscore
+* get highscores (JSON)
+* increase total play count
+* get total play count
+
+#Requirements
+* Node.js
+* MongoDB
+
+#How to use
+1. 'npm install'
+2. edit config/secretKey.js to use your own hashkey. Check highscore.js exports.addHighscore how the hash is generated.
+3. 'node app.js' or 'grunt'
