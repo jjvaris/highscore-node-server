@@ -1,7 +1,7 @@
 highscore-node-server
 =====================
 
-Node.js + MongoDB backend highscore server for your game. Stores top 10 daily, weekly and all time highscores. Server caches top highscores into a file (default: every 1 sec). This allows enormous number of concurrent users. 
+Node.js + MongoDB highscore server backend for your games. Stores top 10 daily, weekly and all time highscores. Server caches top highscores into a file (default: every 1 sec). This allows enormous number of concurrent users.
 
 #API
 * post highscore
