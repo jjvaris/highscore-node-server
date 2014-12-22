@@ -14,6 +14,6 @@ Node.js + MongoDB highscore server backend for your games. Stores top 10 daily, 
 * MongoDB
 
 #How to use
-1. 'npm install'
+1. 'npm install' installs dependencies.
 2. edit config/secretKey.js to use your own hashkey. Check highscore.js exports.addHighscore how the hash is generated.
-3. 'node app.js' or 'grunt'
+3. 'node app.js' or 'grunt' runs the server.
