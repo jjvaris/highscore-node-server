@@ -28,18 +28,18 @@ exports.getDayilyWeeklyAlltime = function(){
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
 
   //daily
-  Highscore.find({date: { $gte: yesterday }}).select('name score date uid').limit(10).sort({score: 'desc'}).execFind(
+  Highscore.find({date: { $gte: yesterday }}).select('name score date uid').limit(10).sort({score: 'desc'}).exec(
     function(err, todayHighscores){
       if(err) return console.log(err);
       if(todayHighscores.length !== 0)
         allHighscores.today = todayHighscores;
       //weekly
       Highscore.find({date: { $gte: weekAgo}}).select('name score date uid').limit(10)
-        .sort({score: 'desc'}).execFind(function(err, weekAgoHighscores){
+        .sort({score: 'desc'}).exec(function(err, weekAgoHighscores){
           if(err) return console.log(err);
           if(weekAgoHighscores.length !== 0)
             allHighscores.this_week = weekAgoHighscores;
-          Highscore.find().select('name score date uid').limit(10).sort({score: 'desc'}).execFind(
+          Highscore.find().select('name score date uid').limit(10).sort({score: 'desc'}).exec(
             function(err, allTimeHighscores) {
               if(err) return console.log(err);
               if(allTimeHighscores.length !== 0)
@@ -87,7 +87,7 @@ exports.removeOldHighscores = function (req, res) {
   var weekAgo = new Date();
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
   Highscore.find().limit(10)
-    .sort({score: 'desc'}).execFind(function(err, tenBestHighscores){
+    .sort({score: 'desc'}).exec(function(err, tenBestHighscores){
     if(tenBestHighscores.length != 0 )
       Highscore.remove({date: { $lt: weekAgo},
         score: {$lt: tenBestHighscores[tenBestHighscores.length-1].score}}, function(err) {
