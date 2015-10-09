@@ -10,7 +10,6 @@ module.exports = function(app, config) {
     app.use(express.favicon(config.root + '/public/img/icon.ico'));
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
-    app.use(bodyParser.urlencoded({ extended: true }));
     app.use(express.methodOverride());
     app.use(app.router);
     app.use(function(req, res) {
