@@ -75,6 +75,7 @@ exports.addHighscore = function (req, res) {
 };
 
 exports.addHighscoreEasy = function (req, res) {
+  console.log(req.body);
   var newHighscore = new Highscore(req.body);
   newHighscore.save(function(err) {
     if (err) return res.json(400, err);
