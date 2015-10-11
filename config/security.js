@@ -1,3 +1,3 @@
-var secretKey = {secretKey: "xDsvai272Cxs+0.998943534oireuda"};
+var secretKey = {secretKey: "Your secret hashkey"}; //REPLACE
 
 module.exports = secretKey;
