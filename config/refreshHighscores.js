@@ -3,7 +3,7 @@ var highscores = require('../app/controllers/highscores');
 function updateHighscoreFileJob() {
   setInterval(function() {
     highscores.getDayilyWeeklyAlltime();
-  }, 1000); // updates highscorefile every second
+  }, 500); // updates highscorefile every halfsecond
 }
 
 function removeOldHighscoresJob() {

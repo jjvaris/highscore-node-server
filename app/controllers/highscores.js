@@ -1,5 +1,5 @@
 var mongoose = require('mongoose'),
-    Highscore = mongoose.model('Highscore');
+  Highscore = mongoose.model('Highscore');
 
 var config = require('../../config/config');
 var fs = require('fs');
@@ -12,7 +12,7 @@ exports.get = function(req, res){
 };
 
 exports.getHighscoreFile = function(req, res) {
-  fs.readFile('public/highscorefile.json', 'utf8',function(err, file) {
+  fs.readFile('public/highscoresfile.json', 'utf8',function(err, file) {
     if(err) return res.send(err);
     return res.end(file);
   })
@@ -28,24 +28,24 @@ exports.getDayilyWeeklyAlltime = function(){
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
 
   //daily
-  Highscore.find({date: { $gte: yesterday }}).select('name score date uid').limit(10).sort({score: 'desc'}).execFind(
+  Highscore.find({date: { $gte: yesterday }}).select('name score date uid').limit(10).sort({score: 'desc'}).exec(
     function(err, todayHighscores){
       if(err) return console.log(err);
       if(todayHighscores.length !== 0)
         allHighscores.today = todayHighscores;
       //weekly
       Highscore.find({date: { $gte: weekAgo}}).select('name score date uid').limit(10)
-        .sort({score: 'desc'}).execFind(function(err, weekAgoHighscores){
+        .sort({score: 'desc'}).exec(function(err, weekAgoHighscores){
           if(err) return console.log(err);
           if(weekAgoHighscores.length !== 0)
             allHighscores.this_week = weekAgoHighscores;
-          Highscore.find().select('name score date uid').limit(10).sort({score: 'desc'}).execFind(
+          Highscore.find().select('name score date uid').limit(10).sort({score: 'desc'}).exec(
             function(err, allTimeHighscores) {
               if(err) return console.log(err);
               if(allTimeHighscores.length !== 0)
                 allHighscores.all_time = allTimeHighscores;
               if(allHighscores.length !== 0)
-                fs.writeFile('public/highscorefile.json', JSON.stringify(allHighscores), function(err) {
+                fs.writeFile('public/highscoresfile.json', JSON.stringify(allHighscores), function(err) {
                   if(err) console.log(err);
                   if(todayHighscores.length !== 0)
                     Highscore.remove({date: { $gte: yesterday},
@@ -82,12 +82,12 @@ exports.addHighscoreEasy = function (req, res) {
   });
 };
 
-exports.removeOldHighscores = function () {
+
+exports.removeOldHighscores = function (req, res) {
   var dateOffsetWeek = (24*60*60*1000) * 7; //7 days
   var weekAgo = new Date();
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
-  Highscore.find().limit(10)
-    .sort({score: 'desc'}).execFind(function(err, tenBestHighscores){
+  Highscore.find().limit(10).sort({score: 'desc'}).exec(function(err, tenBestHighscores){
     if(tenBestHighscores.length != 0 )
       Highscore.remove({date: { $lt: weekAgo},
         score: {$lt: tenBestHighscores[tenBestHighscores.length-1].score}}, function(err) {
