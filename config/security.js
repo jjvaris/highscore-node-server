@@ -1,3 +1,4 @@
-var secretKey = {secretKey: "xDsvai272Cxs+0.998943534oireuda"}; //REPLACE
+var key = process.env.SECRET_KEY || "Your hash key";
+var secretKey = {secretKey: key};
 
 module.exports = secretKey;
