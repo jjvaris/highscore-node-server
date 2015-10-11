@@ -1,4 +1,5 @@
 .idea/
 /node_modules
 /config/security.js
-public/highscoresfile2.json
+public/highscoresfile.json
+.DS_Store

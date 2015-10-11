@@ -69,13 +69,12 @@ exports.addHighscore = function (req, res) {
       return res.json(newHighscore);
     });
   } else {
-      console.log("ATTACK: hashes didnt match");
+      console.log("Possible ATTACK: hashes didn't match");
       return res.send(400);
   }
 };
 
 exports.addHighscoreEasy = function (req, res) {
-  console.log(req.body);
   var newHighscore = new Highscore(req.body);
   newHighscore.save(function(err) {
     if (err) return res.json(400, err);
@@ -83,12 +82,12 @@ exports.addHighscoreEasy = function (req, res) {
   });
 };
 
+
 exports.removeOldHighscores = function (req, res) {
   var dateOffsetWeek = (24*60*60*1000) * 7; //7 days
   var weekAgo = new Date();
   weekAgo.setTime(weekAgo.getTime() - dateOffsetWeek);
-  Highscore.find().limit(10)
-    .sort({score: 'desc'}).exec(function(err, tenBestHighscores){
+  Highscore.find().limit(10).sort({score: 'desc'}).exec(function(err, tenBestHighscores){
     if(tenBestHighscores.length != 0 )
       Highscore.remove({date: { $lt: weekAgo},
         score: {$lt: tenBestHighscores[tenBestHighscores.length-1].score}}, function(err) {

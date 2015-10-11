@@ -15,7 +15,6 @@ var config = {
       name: 'clicks-node-server'
     },
     port: port,
-    //db: 'mongodb://heroku_app22886915:mgn91iolj61pgr06or56lcafsc@ds033069.mongolab.com:33069/heroku_app22886915',
     db: db,
     secretKey: security.secretKey
   },

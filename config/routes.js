@@ -1,20 +1,18 @@
 module.exports = function(app){
 
-	//home route
-	//
-  var home = require('../app/controllers/home');
   var highscores = require('../app/controllers/highscores');
   var logger = require('../app/controllers/logger');
 
-  app.get('/', home.index);
-
-  //app.get('/api/highscores', highscores.get);
+  //add highscores using MD5 hash
   app.post('/api/highscores', highscores.addHighscore);
-  app.post('/api/highscoresTest', highscores.addHighscoreEasy);
-//  app.get('/api/highscorelists', highscores.getDayilyWeeklyAlltime);
+
+  //add highscores without hash - use this only for testing
+  app.post('/api/highscoresEasy', highscores.addHighscoreEasy);
+
+  //get highscores
   app.get('/api/highscorefile', highscores.getHighscoreFile);
 
-  app.get('/api/test', highscores.removeOldHighscores);
+  //for monitoring number of games played
   app.get('/api/increasePlayCount', logger.incrementPlayCount);
   app.get('/api/getPlayCount', logger.getPlayCount);
 
