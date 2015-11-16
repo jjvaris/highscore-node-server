@@ -8,7 +8,7 @@ module.exports = function(app){
   app.post('/api/highscores', highscores.addHighscore);
 
   //add highscores without hash - use this only for testing
-  app.post('/api/highscoresEasy', highscores.addHighscoreEasy);
+  app.post('/api/highscoresTest', highscores.addHighscoreEasy);
 
   //get highscores
   app.get('/api/highscorefile', highscores.getHighscoreFile);
